@@ -7,95 +7,15 @@
             <h1><a href="/"><u>Animesh Writes Something For U</u></a></h1>
         </div>
 
-        <div>
-            <p>published: 14.04.2018, 12:14</p>
-            <h2><a href="">Living in the Wild</a></h2>
-            <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;">Today i'm writing about Myself and my Life in wild.
-         
-         	I am proud to represent a number of different & very inspiring organisations, but on this issue, I speak from the heart and only for myself.
-			
-			I also so respect the right for people to have varying views: that’s a key part of democracy. But the EU Referendum is an issue that really matters & this is why I believe it is important to be open.
-			This referendum has been hard to watch at times but, at heart, this is what I feel: I have travelled all over the world and have noticed, so often, how many of the most vulnerable people look to the UK for character and leadership, 
-			as if we are like beacons of good manners and fortitude. Our country’s values and contribution are respected across Europe and beyond; the UK is a trusted friend to so many nations. Those things can get lost in the maze of headlines.
-			
-			At such a time for the UK to retreat, run and cut ourselves loose from Europe, when there are so many challenges on our doorstep, to me just doesn't feel either courageous or kind. Europe has many flaws, 
-			but I also believe the way to help resolve many of those tough issues is from within. History has taught us that together we achieve more. I guess I believe that to help make the future of the world a better place then that future has to be about partnership.
-			
-			As a taxi driver said to me in Paris recently, we really need you, the UK. Don’t desert us when times are tough, stand with us like you always have. That rang true.
-			
-			I have never been a good quitter and I am so proud of the UK and our values: tolerance, kindness, respect, courage and resilience. This is why I want us to stay together and Remain in Europe.</p>
-        </div>
 
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;">
+			{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 
-
-        <div>
-            <p>published: 10.04.2018, 10:00</p>
-            <h2><a href=""><u>Philosophy and the Journey Ahead</u></a></h2>
-            <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;">
-			I'm just a Budding one out there (pun intended) . Perhaps the thing here in the world and the experience you gather give a sense of possession and realisation among which i think the latter stays and previous one just fades away.
-			Just Hear me out in this one, for it is all i ask of you and ponder later for that is what all i expect of you. I'm currently taking a sociological theory class for my major and we just did an initial overview on Georg Simmel's main concepts. 
-			The one that struck me the most was his focus on the 'tragedy of culture'.
-
-			Basically, Simmel makes a distinction between objective culture (this involves both material culture and immaterial culture; science, art, philosophy, and the physical things that come about from these things) and subjective (or individual) culture, 
-			which is the ability of the individual to produce, control, or absorb parts of objective culture. Objective culture is composed of our creations; subjective culture is how we interact with said objective culture. Now here's the real kicker: while objective
-			 culture grows exponentially, our ability to process it (the potency of individual culture) only grows in small amounts at a time. The more we specialize, the more products and information we create. We create mountains of culture, information, art, products, etc. 
-			 than we can possibly deal with. Every time we have a new scientific discovery that seems to be the beginning of humanity's total mastery over our world, we are actually causing the opposite to happen.
-
-			With the continual increase in objective culture comes our loss of control over our world. As we are bombarded by a functionally infinite amount of information, we slowly become controlled by the very things we have created. We think we have control but really, 
-			our ideas have more control over us now more than ever and it will only get worse from here.
-
-			In humanity's push for specialization, I've started to see another limitation of ours. In the early 20th century, idealists/romanticists/Transcendentalists were criticized for being too grand in mind - we needed to shrink down to the small parts of things rather than 
-			creating grand narratives to explain our world because frankly, our grand ideals never seemed to match up with reality. But as we have pushed to discover the true nature of things as we zoom in on the microscope, we become disconnected from everything else. 
-			If you are working in a factory to create the machine that will be used to punch the little dotted lines on toilet paper that allows them to be easily torn, it is difficult to see how you fit into any bigger picture beyond toilet paper, beyond the factory, beyond the market 
-			for toilet paper, beyond the material conditions that make those needs necessary, beyond our societies. As a worker in such a small position, you become disconnected from everything else as you focus in your one small task. 
-			This might seem incredibly depressing but as with every social problem, understanding it makes it easier to deal with.</p>
-        </div>
-        
-        
-        
-        <div>
-            <p>published: 06.04.2018, 15:56</p>
-            <h2><a href=""><u>What to expect when you are Expecting</u></a></h2>
-            <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;">
-			No neither it is target toward pregnant ladies or soon to be having a baby. This is way more important Financially (i'm not a big fan of Kids or babies). 
-			Just sharing some thought, some experence , some my own , Some from other to achieve what need to be expected if you are switching jobs or newly hired but salary's yet to be confirmed.
-
-			Now, that many of you have been invited to interviews and were given job offers, we received an increasing amount of concerns on how to answer the famous salary question. 
-			So, it’s time to learn how to negotiate – as always, we’re here to help to get you prepped for your next negotiation. Consider these 7 points:
-			
-			1.) Know what you’re worth
-			If you’re going to get the pay you deserve, it’s crucial to know the going rate for your position in your specific industry and in your geographic area, 
-			i.e. get a number in your head, for example, ask others in your field (ideally both men and women, to avoid the gender pay gap).
-
-			2.) Talk to recruiters (or to us)
-			Recruiters know what people with your “experience” and expertise are worth. So, the next time a recruiter reaches out to you, 
-			engage in a conversation about the position’s responsibilities and pay. You may not get a specific number, but even a range is helpful.
-
-			3.) Choose a range and pick the top of it
-			As you’re doing your research, you’ll likely come up with a range that represents your market value. Ask for something toward the top of the range. 
-			Why? First, you should assume you deserve the top pay. Second, your employer will almost certainly negotiate down, so you need 
-			room to still end up with a salary you’re happy with. Keep the range small, i.e. not more than €5K.
-
-			4.) State your number first
-			The anchor—or the first number put on the table—is the most important in negotiation, since it’s what the rest of the conversation is based off of. 
-			If it’s too low, you’ll end up with a lower final offer than you probably want. You should always be the first person to mention a number so that you keep control.
-
-			5.) Be nice but firm
-			If the employer’s number doesn’t match your expectations? Say this: I appreciate the offer at Rs48,000, but was really expecting to be in the Rs55,000 range 
-			based on my experience, drive, and performance. Can we look at a salary of Rs55,000 for this position?” But, be flexible: always be willing to revise your first offer. 
-			In doing so, you’ll still likely get a good deal, and the employer will be pleased with the outcome.
-
-			6.) Practice, practice, practice
-			Write down what you want to say, and practice to a mirror, on video, or with a friend until you’re comfortable having the conversation.
-
-			7.) It’s ok to say No
-			When considering your numbers, you should also come up with a “walk away point”—a final offer that’s so low that you have to turn it down. 
-			This could be based on financial need, market value, or simply what you need to feel good about the salary you’re earning. 
-			Walking away from an offer will never be easy, but it’s important to know when to do it – and powerful to be able to say “no.”
-
-			Final words: Remember that many first time job positions, especially at large companies, are recruited “in bulk”, 
-			so there is very likely a specific range which means the employer does not have much room for allowance. 
-			So, in case they don’t fulfil your salary expectations, don’t assume they just don’t want to – more often than not they just can’t.</p>
-        </div>
     </body>
 </html>
